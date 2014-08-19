@@ -1,0 +1,60 @@
+<link rel="import" 
+  href="../bower_components/polymer/polymer.html">
+<link rel="import" 
+  href="../bower_components/core-icon-button/core-icon-button.html">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:500,400' rel='stylesheet' type='text/css'>
+
+  <polymer-element name="post-card">
+  	<template>
+
+  		<style> 
+  		:host{
+  			display:block; 
+  			position:relative; 
+  			background-color:white; 
+  			width: 85%%;
+  			padding: 20px;
+  			font-size: 1.2em; 
+  			font-family: 'Raleway', sans-serif;
+  			font-weight: 400; 
+  			-webkit-box-shadow: 0px 7px 30px 0px rgba(50, 50, 50, 0.17);
+			-moz-box-shadow:    0px 7px 30px 0px rgba(50, 50, 50, 0.17);
+			box-shadow:         0px 7px 30px 0px rgba(50, 50, 50, 0.17);
+  		} 
+  		img { 
+  			max-height: 200px; 
+  		} 
+  		.card-header { 
+  			margin-bottom: 10px; 
+  		}	
+  		polyfill-next-selector { content: '.card-header img'; }
+		.card-header ::content img {
+			width: 100%;
+			
+		
+		}
+  		polyfill-next-selector { content: '.card-header h2'; }
+		.card-header ::content h2 {
+ 		 margin: 0;
+  		font-size: 1.8rem;
+  		font-weight: 400;
+  	
+  	}
+  		</style>
+  		<div class="card-header" vertical layout> 
+  			<content select="img"></content>
+  			<content select="h2"></content>
+  		</div>
+  		<content></content>
+  	</template>
+  	<script>
+  	Polymer({});
+  	</script>
+  </polymer-element> 
+
+
+
+
+
+
+  		
